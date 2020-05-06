@@ -23,7 +23,7 @@ plot_music <- function(){
   
   plot <- ggplot(x, aes(x = x, y = y)) + 
     geom_point(size = 6, shape = 8) +
-    geom_hline(yintercept = c(2, 4, 6, 8)) +
+    geom_hline(yintercept = c(2, 4, 6, 8, 10)) +
     theme(title = element_text(size = 16)) +
     labs(title = title) +
     theme_void() 
