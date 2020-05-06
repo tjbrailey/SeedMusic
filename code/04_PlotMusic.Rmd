@@ -36,5 +36,7 @@ source(paste0(here::here(), "/code/03_GeneratePlot.R"))
 ```
 
 ```{r}
+for(i in 1:10){
 plot_music()
+}
 ```

@@ -28,6 +28,8 @@ plot_music <- function(){
     labs(title = title) +
     theme_void() 
   
-  return(plot)
+  ggsave(plot, filename = paste0(here::here(), "/vis/", title, ".png"))
   
+  return(plot)
+ 
 }
