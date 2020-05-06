@@ -1,0 +1,40 @@
+---
+title: "04_PlotMusic"
+author: "Thomas J. Brailey"
+date: "05/05/2020"
+output:
+  pdf_document:
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+editor_options:
+  chunk_output_type: inline
+---
+<style>
+    body .main-container {
+        max-width: 100%;
+    }
+</style>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+```{r}
+library(magrittr)
+library(ggplot2)
+```
+
+```{r , results='hide', message=FALSE, warning=FALSE, include=FALSE}
+source(paste0(here::here(), "/code/03_GeneratePlot.R"))
+```
+
+```{r}
+plot_music()
+```
