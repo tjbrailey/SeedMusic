@@ -16,10 +16,10 @@ library(ggplot2)
 
 generate_data <- function(){
   
-  x <- data.frame(x = sample(0:40, 20, rep = FALSE),
+  x <- data.frame(x = sample(0:50, 20, rep = FALSE),
              y = sample(0:12, 5, rep = FALSE))
   
-  some_na <- sample(0:10, 1, rep = FALSE)
+  some_na <- sample(0:15, 1, rep = FALSE)
   
   x$x[sample(seq(x$x), some_na)] <- NA
   
