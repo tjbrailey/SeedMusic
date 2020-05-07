@@ -32,7 +32,7 @@ library(ggplot2)
 ```
 
 ```{r , results='hide', message=FALSE, warning=FALSE, include=FALSE}
-source(paste0(here::here(), "/code/03_GeneratePlot.R"))
+source(paste0(here::here(), "/code/04_GeneratePlot.R"))
 ```
 
 ```{r}
