@@ -17,7 +17,8 @@ source(paste0(here::here(), "/code/01_GenerateData.R"))
 # Generate title
 generate_title <- function(){
   
-  title <- sample(stringi::stri_rand_strings(10, 10, pattern = "[a-z]"), 1, rep = TRUE)
+  title <- paste(sample(stringi::stri_rand_strings(10, 10, pattern = "[a-z]"), 1, rep = TRUE),
+                 sample(stringi::stri_rand_strings(10, 10, pattern = "[a-z]"), 1, rep = TRUE), sep = " ") 
   
   return(title)
   
