@@ -6,13 +6,6 @@
 #' @param 
 #' @return 
 
-# Preliminaries
-rm(list = ls())
-
-library(magrittr)
-library(ggplot2)
-
-source(paste0(here::here(), "/code/03_GenerateMode.R"))
 
 # Generate plots
 plot_music <- function(){

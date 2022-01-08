@@ -32,11 +32,15 @@ library(ggplot2)
 ```
 
 ```{r , results='hide', message=FALSE, warning=FALSE, include=FALSE}
+source(paste0(here::here(), "/code/01_GenerateData.R"))
+source(paste0(here::here(), "/code/02_GenerateTitle.R"))
+source(paste0(here::here(), "/code/03_GenerateMode.R"))
 source(paste0(here::here(), "/code/04_GeneratePlot.R"))
 ```
 
 ```{r}
+# Generate 10 example pieces of music
 for(i in 1:10){
-plot_music()
+  plot_music()
 }
 ```
