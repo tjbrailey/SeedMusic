@@ -39,7 +39,7 @@ source(paste0(here::here(), "/code/04_GeneratePlot.R"))
 ```
 
 ```{r}
-# Generate 10 example pieces of music
+# Generate 10 example pieces of music for Josh
 for(i in 1:10){
   plot_music()
 }
